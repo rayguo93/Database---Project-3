@@ -39,7 +39,7 @@ customer c1, advertisement a1, advertisement a2
 where c1.uid = a1.creator_id and a1.price > 200 and c1.uid = a2.creator_id and a2.price > 200 and a1.ad_id != a2.ad_id;
 ```
 
-## 5) select username, ads_count of users who put up more than 1 advertisements and who have sent more than 2 messages (active users)
+## 5) select username, ads_count of users who put up more than 1 advertisements (active users)
 input x advertisements and y messages
 ```sql
 (select username, email from customer
